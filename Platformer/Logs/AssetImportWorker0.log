@@ -1,0 +1,211 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.0f1 (c7b5465681fb) revision 13088070'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 18363.1440; Version 1909; 64bit' Language: 'pt' Physical Memory: 10178 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2019.4.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/baldu/PlatformerGame/Platformer
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+63120
+Successfully changed project path to: C:/Users/baldu/PlatformerGame/Platformer
+C:/Users/baldu/PlatformerGame/Platformer
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 128.77 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.0f1 (c7b5465681fb)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/baldu/PlatformerGame/Platformer/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) Vega 8 Graphics (ID=0x15d8)
+    Vendor:   
+    VRAM:     5089 MB
+    Driver:   26.20.11028.1002
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56284
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2019.4.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006773 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 122.23 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.828 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001309 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 79.47 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.649 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 0.84 ms, found 1 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1806 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 84.5 MB.
+System memory in use after: 84.5 MB.
+
+Unloading 24 unused Assets to reduce memory usage. Loaded Objects now: 2248.
+Total: 6.202500 ms (FindLiveObjects: 0.521700 ms CreateObjectMapping: 0.180900 ms MarkObjects: 5.140100 ms  DeleteObjects: 0.354500 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/tiles and background_foreground/tileset.png
+  artifactKey: Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles and background_foreground/tileset.png using Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd63140059206f0f1a320f495397af16') in 0.393875 seconds
+  Import took 0.403520 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 148.991156 seconds.
+  path: Assets/tiles and background_foreground/tileset.png
+  artifactKey: Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles and background_foreground/tileset.png using Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13349a29582f3c3ac20553e22610c62c') in 0.050869 seconds
+  Import took 0.059252 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000823 seconds.
+  path: Assets/tiles and background_foreground/tileset.png
+  artifactKey: Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles and background_foreground/tileset.png using Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13349a29582f3c3ac20553e22610c62c') in 0.027936 seconds
+  Import took 0.038585 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 168.791516 seconds.
+  path: Assets/tiles and background_foreground/tileset.png
+  artifactKey: Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles and background_foreground/tileset.png using Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5ac95a15ab6665b1779d393f070e15f') in 0.260010 seconds
+  Import took 0.269505 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.017874 seconds.
+  path: Assets/tiles and background_foreground/tileset.png
+  artifactKey: Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/tiles and background_foreground/tileset.png using Guid(4bb2c438caf582a4e9ddf2ed2cfaffe7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20bd53238848c4f795b786e3d36207de') in 0.265889 seconds
+  Import took 0.273216 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 244.041357 seconds.
+  path: Assets/Sprites/tiles and background_foreground
+  artifactKey: Guid(51dc7330022f18d4588cc5f706d8663f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tiles and background_foreground using Guid(51dc7330022f18d4588cc5f706d8663f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77250b1998ec14ebf6633885122f883b') in 0.028662 seconds
+  Import took 0.039575 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1532.420324 seconds.
+  path: Assets/Sprites/tiles and background_foreground/background.png
+  artifactKey: Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tiles and background_foreground/background.png using Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'efb5837c982e9d16cfc1fc2b3ecfa40e') in 0.067610 seconds
+  Import took 0.076582 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 22.176256 seconds.
+  path: Assets/Sprites/tiles and background_foreground/background.png
+  artifactKey: Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tiles and background_foreground/background.png using Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d5018de7afaedb96f5f9810614a754') in 0.048445 seconds
+  Import took 0.057209 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.001786 seconds.
+  path: Assets/Sprites/tiles and background_foreground/background.png
+  artifactKey: Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tiles and background_foreground/background.png using Guid(4086bf96fc0216f4b98b295d9ae6e468) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d5018de7afaedb96f5f9810614a754') in 0.027435 seconds
+  Import took 0.035267 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 60.146973 seconds.
+  path: Assets/Sprites/tiles and background_foreground/bg_2.png
+  artifactKey: Guid(5a292d18516c0244baa35a807d80fd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/tiles and background_foreground/bg_2.png using Guid(5a292d18516c0244baa35a807d80fd2a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4edaf383046a6e83a1f3de5c1514e101') in 0.057897 seconds
+  Import took 0.064822 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 98.802247 seconds.
+  path: Assets/Sprites/miscellaneous sprites/antidote_potion.png
+  artifactKey: Guid(25124732a46fd704d83cae3b98ace326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/antidote_potion.png using Guid(25124732a46fd704d83cae3b98ace326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f5d22f01ff6b197185f23a930a7d4d') in 0.045784 seconds
+  Import took 0.056740 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.005686 seconds.
+  path: Assets/Sprites/miscellaneous sprites/antidote_potion.png
+  artifactKey: Guid(25124732a46fd704d83cae3b98ace326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/antidote_potion.png using Guid(25124732a46fd704d83cae3b98ace326) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f5d22f01ff6b197185f23a930a7d4d') in 0.027009 seconds
+  Import took 0.033384 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 2.642764 seconds.
+  path: Assets/Sprites/miscellaneous sprites/trap_suspended_anim_strip_18.png
+  artifactKey: Guid(f97646245f289ca4c88bfdf4b64f94d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/trap_suspended_anim_strip_18.png using Guid(f97646245f289ca4c88bfdf4b64f94d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb3999d06947150bafb639537b1173f6') in 0.054011 seconds
+  Import took 0.061516 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 30.108059 seconds.
+  path: Assets/Sprites/miscellaneous sprites/trap_suspended_anim_strip_18.png
+  artifactKey: Guid(f97646245f289ca4c88bfdf4b64f94d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/trap_suspended_anim_strip_18.png using Guid(f97646245f289ca4c88bfdf4b64f94d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '73a93f3e331c51ec0f0ec7fab8e474b6') in 0.045278 seconds
+  Import took 0.050483 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 21.252143 seconds.
+  path: Assets/Sprites/miscellaneous sprites/tiki_torch_props_strip_12.png
+  artifactKey: Guid(eca3c751174b97b4188ea24d375d2092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/tiki_torch_props_strip_12.png using Guid(eca3c751174b97b4188ea24d375d2092) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b041d062be3b2c0914f8569fe1371b5f') in 0.051671 seconds
+  Import took 0.061996 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.636615 seconds.
+  path: Assets/Sprites/miscellaneous sprites/strange_door_opening_anim.gif
+  artifactKey: Guid(c155a5b58f78252498276358c5559f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/strange_door_opening_anim.gif using Guid(c155a5b58f78252498276358c5559f57) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '040499703658f13e21b55d0d489b2b09') in 0.122989 seconds
+  Import took 0.132380 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 35.054753 seconds.
+  path: Assets/Sprites/miscellaneous sprites/strange_door_closed_anim.gif
+  artifactKey: Guid(62c5e4847d72abb47ae99462729de257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sprites/miscellaneous sprites/strange_door_closed_anim.gif using Guid(62c5e4847d72abb47ae99462729de257) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0352ec5d5ff8956d112190506b94820') in 0.049917 seconds
+  Import took 0.056580 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
