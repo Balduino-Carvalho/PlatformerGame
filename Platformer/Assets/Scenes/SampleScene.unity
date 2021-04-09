@@ -3715,7 +3715,7 @@ GameObject:
   - component: {fileID: 193749919}
   - component: {fileID: 193749918}
   - component: {fileID: 193749923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: enemy_slime
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3734,6 +3734,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7fb60662022c546bb8262a396ad3fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 3
   speed: -2
   point: {fileID: 1427261839}
   radius: 0.1
@@ -4319,6 +4320,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 1753408258}
   point: {fileID: 267968208}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  playerHealth: 3
   radius: 0.2
   speed: 5
   JumpForce: 10

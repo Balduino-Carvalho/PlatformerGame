@@ -7,7 +7,11 @@ public class Player : MonoBehaviour
     private Rigidbody2D rig;
     public Animator anim;
     public Transform point;
+    
 
+    public LayerMask enemyLayer;
+
+    public int playerHealth;
     public float radius;
     public float speed;
     public float JumpForce;
@@ -91,11 +95,11 @@ public class Player : MonoBehaviour
         {
             isAttacking = true;
             anim.SetInteger("transition", 3);
-            Collider2D hit = Physics2D.OverlapCircle(point.position, radius);
+            Collider2D hit = Physics2D.OverlapCircle(point.position, radius, enemyLayer);
 
             if (hit != null)
             {
-                Debug.Log(hit.name);
+                hit.GetComponent<Slime>().OnHit();
             }
 
             StartCoroutine(OnAttack());
@@ -112,11 +116,32 @@ public class Player : MonoBehaviour
     {
         Gizmos.DrawWireSphere(point.position, radius);
     }
+    
     void OnCollisionEnter2D(Collision2D colisor)
     {
         if (colisor.gameObject.layer == 8)
         {
             isJumping = false;
+        }
+        
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.layer == 9)
+        {
+            OnHit();
+        }
+    }
+    
+    void OnHit()
+    {
+        anim.SetTrigger("hit");
+        playerHealth--;
+        if(playerHealth <= 0)
+        {
+            anim.SetTrigger("dead");
+            //fazer game over screen
         }
     }
 }
