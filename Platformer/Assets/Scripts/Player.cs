@@ -41,7 +41,7 @@ public class Player : MonoBehaviour
 
         if (movement > 0)
         {
-            if (!isJumping)
+            if (!isJumping && !isAttacking)
             {
                 anim.SetInteger("transition", 1);
             }
@@ -50,7 +50,7 @@ public class Player : MonoBehaviour
         }
         if (movement < 0)
         {
-            if (!isJumping)
+            if (!isJumping && !isAttacking)
             {
                 anim.SetInteger("transition", 1);
             }
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
         isAttacking = false;
     }
 
-    void onDrawFizmos()
+    void onDrawGizmos()
     {
         Gizmos.DrawWireSphere(point.position, radius);
     }
