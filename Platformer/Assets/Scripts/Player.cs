@@ -18,6 +18,7 @@ public class Player : MonoBehaviour
     private bool isJumping = false;
     private bool doubleJump;
     private bool isAttacking;
+    private bool recovery;
 
 
     void Start()
@@ -112,7 +113,7 @@ public class Player : MonoBehaviour
         isAttacking = false;
     }
 
-    void onDrawGizmos()
+    void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(point.position, radius);
     }
@@ -134,12 +135,24 @@ public class Player : MonoBehaviour
         }
     }
     
-    void OnHit()
+    float recoveryCount = 2f;
+    public void OnHit()
     {
-        anim.SetTrigger("hit");
-        playerHealth--;
-        if(playerHealth <= 0)
+       
+       recoveryCount += Time.deltaTime;
+
+       if(recoveryCount >= 2f)
+       {
+            anim.SetTrigger("hit");
+            playerHealth--;
+
+            recoveryCount = 0f;
+            
+       }
+        
+        if(playerHealth <= 0 && !recovery)
         {
+            recovery = true;
             anim.SetTrigger("dead");
             //fazer game over screen
         }

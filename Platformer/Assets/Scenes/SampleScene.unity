@@ -3991,6 +3991,7 @@ GameObject:
   - component: {fileID: 552323448}
   - component: {fileID: 552323447}
   - component: {fileID: 552323446}
+  - component: {fileID: 552323451}
   m_Layer: 0
   m_Name: enemy_goblin
   m_TagString: Untagged
@@ -4010,9 +4011,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6d32b326d2b8244499b47dc5a30c878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  isRight: 1
+  stopDistance: 0.65
+  speed: 2
   maxVision: 3
   point: {fileID: 557829612}
+  backpoint: {fileID: 1085787017}
 --- !u!50 &552323447
 Rigidbody2D:
   serializedVersion: 4
@@ -4119,13 +4123,33 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 552323445}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.249, y: -4.186, z: 0}
-  m_LocalScale: {x: 3.4867802, y: 3.4867802, z: 3.4867802}
+  m_LocalPosition: {x: -0.249, y: -4.27, z: 0}
+  m_LocalScale: {x: 3.02527, y: 3.02527, z: 3.02527}
   m_Children:
   - {fileID: 557829612}
+  - {fileID: 1085787017}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &552323451
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 552323445}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b30bed4c2f9710043a5581d6febfbde8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &557829611
 GameObject:
   m_ObjectHideFlags: 0
@@ -4237,6 +4261,36 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1085787016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1085787017}
+  m_Layer: 0
+  m_Name: backpoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1085787017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085787016}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.089, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 552323450}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1375667404
 GameObject:
@@ -4372,7 +4426,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
