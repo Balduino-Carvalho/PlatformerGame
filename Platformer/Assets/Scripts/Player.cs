@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     private bool doubleJump;
     private bool isAttacking;
     private bool recovery;
+    
 
 
     void Start()
@@ -100,7 +101,17 @@ public class Player : MonoBehaviour
 
             if (hit != null)
             {
-                hit.GetComponent<Slime>().OnHit();
+                
+                
+                if (hit.GetComponent<Slime>())
+                {
+                    hit.GetComponent<Slime>().OnHit();
+                }
+
+                if (hit.GetComponent<Goblin>())
+                {
+                    hit.GetComponent<Goblin>().OnHit();
+                }
             }
 
             StartCoroutine(OnAttack());
@@ -132,6 +143,13 @@ public class Player : MonoBehaviour
         if (collision.gameObject.layer == 9)
         {
             OnHit();
+        }
+
+        if (collision.CompareTag("Coin"))
+        {
+            collision.GetComponent<Animator>().SetTrigger("hit");
+            GameController.instance.GetCoin();
+            Destroy(collision.gameObject, 0.2f);
         }
     }
     

@@ -8,10 +8,12 @@ public class Goblin : MonoBehaviour
     private Animator anim;
     private bool isFront;
     private Vector2 direction;
+    private bool isDead;
 
     public bool isRight;
     public float stopDistance;
 
+    public int health =3;
     public float speed;
     public float maxVision;
     public Transform point;
@@ -46,7 +48,7 @@ public class Goblin : MonoBehaviour
 
     void OnMove()
     {
-        if(isFront)
+        if(isFront && !isDead)
         {
             anim.SetInteger("transition", 1);
             if (isRight) //vira pra direita
@@ -80,7 +82,7 @@ public class Goblin : MonoBehaviour
     {
         RaycastHit2D hit = Physics2D.Raycast(point.position, direction, maxVision);
 
-        if (hit.collider != null)
+        if (hit.collider != null && !isDead)
         {
             if (hit.transform.CompareTag("Player"))
             {
@@ -107,11 +109,27 @@ public class Goblin : MonoBehaviour
             if(backHit.transform.CompareTag("Player"))
             {
                 isRight = !isRight;
+                isFront = true;
             }
         }
 
         
     }
+
+    public void OnHit()
+    {
+        anim.SetTrigger("hit");
+        health--;
+        if (health <= 0)
+        {
+            isDead = true;
+            speed = 0;
+            anim.SetTrigger("death");
+            Destroy(gameObject, 1f);
+        }
+    }
+
+
 
     private void OnDrawGizmos()
     {
