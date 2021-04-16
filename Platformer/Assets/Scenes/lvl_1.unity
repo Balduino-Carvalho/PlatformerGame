@@ -3969,7 +3969,8 @@ GameObject:
   m_Component:
   - component: {fileID: 290032162}
   - component: {fileID: 290032161}
-  m_Layer: 0
+  - component: {fileID: 290032163}
+  m_Layer: 10
   m_Name: door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4041,6 +4042,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &290032163
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 290032160}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.011792898, y: -0.30661598}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.5, y: 1.5}
+    newSize: {x: 1.5, y: 1.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.53297925, y: 0.88676804}
+  m_EdgeRadius: 0
 --- !u!4 &326588691 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4482641103837036427, guid: 405514607fae1194d99000f8d469ed9a, type: 3}
@@ -5361,7 +5388,7 @@ Rigidbody2D:
   m_Material: {fileID: 6200000, guid: f0a97cfeb3cef8c49bc11348c937891c, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!4 &1375667407
 Transform:

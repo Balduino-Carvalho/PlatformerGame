@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -16,7 +17,14 @@ public class GameController : MonoBehaviour
     
     private void Awake()
     {
-        instance = this;
+        DontDestroyOnLoad(this);
+
+        if (instance == null)
+        {
+            instance = this;
+        }else{
+            Destroy(gameObject);
+        }
         
     }
 
@@ -25,5 +33,10 @@ public class GameController : MonoBehaviour
     {
         score++;
         scoreText.text = score.ToString();
+    }
+
+    public void NextLvl()
+    {
+        SceneManager.LoadScene(1);
     }
 }

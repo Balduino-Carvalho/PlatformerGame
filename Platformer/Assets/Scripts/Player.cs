@@ -21,7 +21,21 @@ public class Player : MonoBehaviour
     private bool recovery;
     
 
+    private static Player instance;
 
+    private void Awake()
+    {
+        DontDestroyOnLoad(this);
+
+        if (instance == null)
+        {
+            instance = this;
+        }else{
+            Destroy(gameObject);
+        }
+    }
+    
+    
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
@@ -150,6 +164,11 @@ public class Player : MonoBehaviour
             collision.GetComponent<Animator>().SetTrigger("hit");
             GameController.instance.GetCoin();
             Destroy(collision.gameObject, 0.2f);
+        }
+
+        if(collision.gameObject.layer == 10)
+        {
+            GameController.instance.NextLvl();
         }
     }
     
