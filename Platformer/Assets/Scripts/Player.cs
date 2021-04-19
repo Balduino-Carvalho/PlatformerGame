@@ -12,7 +12,7 @@ public class Player : MonoBehaviour
 
     public LayerMask enemyLayer;
 
-    public int playerHealth;
+    private PlayerHP healthsystem;
     public float radius;
     public float speed;
     public float JumpForce;
@@ -26,13 +26,17 @@ public class Player : MonoBehaviour
 
     private void Awake()
     {
-        DontDestroyOnLoad(this);
-
+        
         if (instance == null)
         {
             instance = this;
-        }else{
-            Destroy(gameObject);
+            DontDestroyOnLoad(gameObject);
+        }
+        else if(instance != this)
+        {
+            Destroy(instance.gameObject);
+            instance = this;
+            DontDestroyOnLoad(gameObject);
         }
     }
     
@@ -41,6 +45,7 @@ public class Player : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         playerAudio = GetComponent<PlayerAudio>();
+        healthsystem = GetComponent<PlayerHP>();
     }
 
     void Update()
@@ -187,17 +192,18 @@ public class Player : MonoBehaviour
        if(recoveryCount >= 2f)
        {
             anim.SetTrigger("hit");
-            playerHealth--;
+            healthsystem.HP--;
 
             recoveryCount = 0f;
             
        }
         
-        if(playerHealth <= 0 && !recovery)
+        if(healthsystem.HP <= 0 && !recovery)
         {
             recovery = true;
             anim.SetTrigger("dead");
             //fazer game over screen
+            GameController.instance.ShowGameOver();
         }
     }
 }
