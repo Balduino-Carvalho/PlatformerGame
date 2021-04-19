@@ -25,6 +25,12 @@ public class GameController : MonoBehaviour
         }else{
             Destroy(gameObject);
         }
+
+        if (PlayerPrefs.GetInt("score") > 0)
+        {
+            score = PlayerPrefs.GetInt("score");
+            scoreText.text = score.ToString();
+        }
         
     }
 
@@ -33,6 +39,8 @@ public class GameController : MonoBehaviour
     {
         score++;
         scoreText.text = score.ToString();
+
+        PlayerPrefs.SetInt("score", score);
     }
 
     public void NextLvl()

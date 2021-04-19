@@ -38,10 +38,12 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\GameController.cs" />
      <Compile Include="Assets\Scripts\PuzzleButtom.cs" />
+     <Compile Include="Assets\Scripts\PlayerPos.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\Scripts\Goblin.cs" />
      <Compile Include="Assets\Scripts\Slime.cs" />
-     <Compile Include="Assets\Scripts\PlayerPos.cs" />
+     <Compile Include="Assets\Scripts\PlayerAudio.cs" />
+     <Compile Include="Assets\Scripts\PlayerHP.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
